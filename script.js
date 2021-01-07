@@ -6,5 +6,5 @@ var search = "charizard";
         method: "GET",
       }).then(function (response) {
         
-        
+        new things
       });
