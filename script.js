@@ -23,7 +23,7 @@ var search = "420";
         addButton.addClass("add-team")
         addButton.text("Add to Team")
         pokeImg.attr("src", image);
-        var pokeName = $("<h1>").text("Name: " + cap + " #" + number);
+        var pokeName = $("<h2>").text("Name: " + cap + " #" + number);
         //getting base stats to add into the statDiv element
         for (i = 0; i < baseStat.length; i++) {
           var sName = response.stats[i].stat.name
