@@ -28,9 +28,10 @@
         var statDiv = $("<div>");
         var pokeImg = $("<img>");
         var typeDiv = $("<div>");
-        var addButton = $("<button>")
-        addButton.addClass("add-team")
-        addButton.text("Add to Team")
+        var addButton = $("<button>");
+        addButton.addClass("add-team");
+        addButton.text("Add to Team");
+        addButton.attr("data-name", cap).attr("data-img", image);
         pokeImg.attr("src", image);
         var pokeName = $("<h2>").text("Name: " + cap + " #" + number);
         //getting base stats to add into the statDiv element
@@ -60,7 +61,16 @@
         $("#pokemonInfo").append(pokeDiv);
       });
 
-
-
     });
-      
+    function addTeamMember() {
+      var teamDiv = $("<div class='innerSlot'>");
+       var teamName = $(this).attr("data-name");
+      var teamImg = $(this).attr("data-img");
+      var teamNameEl = $("<p>").text(teamName);
+      var teamImgEl = $("<img>").attr("src", teamImg);
+     
+      teamDiv.append(teamNameEl)
+      teamDiv.append(teamImgEl)
+      $("#Slot1").append(teamDiv);
+    }
+    $(document).on("click", ".add-team", addTeamMember);
