@@ -68,9 +68,24 @@
       var teamImg = $(this).attr("data-img");
       var teamNameEl = $("<p class='teamName'>").text(teamName);
       var teamImgEl = $("<img class='teamImg'>").attr("src", teamImg);
-     
+      var slot
       teamDiv.append(teamNameEl)
       teamDiv.append(teamImgEl)
-      $("#Slot1").append(teamDiv);
-    }
+      console.log($("#Slot1"))
+      if ($("#Slot1").text() === ""){
+      slot = $("#Slot1");
+      } else if ($("#Slot2").text() === ""){
+        slot = $("#Slot2");
+      } else if ($("#Slot3").text() === ""){
+        slot = $("#Slot3");
+      } else if ($("#Slot4").text() === ""){
+        slot = $("#Slot4");
+      } else if ($("#Slot5").text() === ""){
+        slot = $("#Slot5");
+      } else {
+         slot = $("#Slot6");
+       }
+      
+      slot.append(teamDiv)
+    };
     $(document).on("click", ".add-team", addTeamMember);
