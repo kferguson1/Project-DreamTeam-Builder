@@ -24,10 +24,10 @@
         var number = response.id;
         var baseStat = response.stats;
         //creating elements to put info into html
-        var pokeDiv = $("<div>");
-        var statDiv = $("<div>");
-        var pokeImg = $("<img>");
-        var typeDiv = $("<div>");
+        var pokeDiv = $("<div class='searchDiv'>");
+        var statDiv = $("<div class='pokeStats'>");
+        var pokeImg = $("<img class='pokeImg'>");
+        var typeDiv = $("<div class='pokeType'>");
         var addButton = $("<button>");
         addButton.addClass("add-team");
         addButton.text("Add to Team");
@@ -66,8 +66,8 @@
       var teamDiv = $("<div class='innerSlot'>");
        var teamName = $(this).attr("data-name");
       var teamImg = $(this).attr("data-img");
-      var teamNameEl = $("<p>").text(teamName);
-      var teamImgEl = $("<img>").attr("src", teamImg);
+      var teamNameEl = $("<p class='teamName'>").text(teamName);
+      var teamImgEl = $("<img class='teamImg'>").attr("src", teamImg);
      
       teamDiv.append(teamNameEl)
       teamDiv.append(teamImgEl)
