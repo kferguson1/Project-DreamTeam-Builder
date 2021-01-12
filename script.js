@@ -1,7 +1,16 @@
+
+
+
+
 // the search query that will get plugged in for the response
-var search = "420";
-//api link 
-      var queryURL = " https://pokeapi.co/api/v2/pokemon/" + search + "";
+      $("#searchButton").on("click", function(event) {
+        event.preventDefault();
+        $( "#pokemonInfo" ).empty();
+        var input = document.getElementById("searchBar").value;
+
+      //api link 
+      var queryURL = " https://pokeapi.co/api/v2/pokemon/" + input + "";  
+
 //ajax method to get the JSON back from the api
       $.ajax({
         url: queryURL,
@@ -50,4 +59,8 @@ var search = "420";
         pokeDiv.append(addButton);
         $("#pokemonInfo").append(pokeDiv);
       });
+
+
+
+    });
       
