@@ -10,6 +10,19 @@ h1 {
     color: #ffffff;
 }
 
+.searchbar {
+    padding: 10px;
+    text-align: left;
+    color: #ffffff;
+}
+
+button {
+    text-align: center;
+    background-color: #FFDE00;
+    border: 5px solid #3B4CCA;
+    color: #ffffff;
+}
+
 h2 {
     font-size: 25px;
 }
