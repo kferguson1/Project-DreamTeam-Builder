@@ -82,8 +82,10 @@
         slot = $("#Slot4");
       } else if ($("#Slot5").text() === ""){
         slot = $("#Slot5");
-      } else {
+      } else if ($("#Slot6").text() === ""){
          slot = $("#Slot6");
+       } else {
+         alert("Your team is already fully stacked!")
        }
       
       slot.append(teamDiv)
