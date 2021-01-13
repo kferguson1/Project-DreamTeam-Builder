@@ -90,4 +90,14 @@
       
       slot.append(teamDiv)
     };
+    $("#clearButton").on("click", function(event) {
+      event.preventDefault();
+      $( "#Slot1" ).empty();
+      $( "#Slot2" ).empty();
+      $( "#Slot3" ).empty();
+      $( "#Slot4" ).empty();
+      $( "#Slot5" ).empty();
+      $( "#Slot6" ).empty();
+    });
     $(document).on("click", ".add-team", addTeamMember);
+   
