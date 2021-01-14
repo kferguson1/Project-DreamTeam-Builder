@@ -20,7 +20,7 @@ button {
   text-align: center;
   background-color: #ffde00;
   border: 5px solid #3b4cca;
-  color: #ffffff;
+  color: #000000;
 }
 
 h2 {
@@ -38,4 +38,13 @@ p {
   background: #ffde00;
   border: 5px solid #3b4cca;
   line-height: 60px;
+}
+
+.col {
+  color: #000000;
+}
+
+.teamImg {
+  width: 100%;
+  height: auto;
 }
