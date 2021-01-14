@@ -113,4 +113,23 @@
       localStorage.setItem("slot1", slot1)
       localStorage.setItem("slot1img", slot1img)
     }
+    $(document).on("click", "#displayTeam", displayTeamF);
+
+    function displayTeamF() {
+      $( ".teamSlots" ).empty();
+      console.log(localStorage.getItem("slot1"))
+      $("#Slot1").text(localStorage.getItem("slot1"))
+      var slots = [localStorage.getItem("slot1"), localStorage.getItem("slot2"), localStorage.getItem("slot3"), localStorage.getItem("slot4"), localStorage.getItem("slot5"), localStorage.getItem("slot6")]
+      
+      var teamDiv = $("<div class='innerSlot'>");
+      var teamName = $(this).attr("data-name");
+     var teamImg = $(this).attr("data-img");
+     var teamNameEl = $("<p class='teamName'>").text(teamName);
+     var teamImgEl = $("<img class='teamImg'>").attr("src", teamImg);
+     var slot
+     teamDiv.append(teamNameEl)
+     teamDiv.append(teamImgEl)
+     
+     slot.append(teamDiv)
+    };
    
