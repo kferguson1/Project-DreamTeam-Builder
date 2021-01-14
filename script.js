@@ -105,13 +105,40 @@
       event.preventDefault()
       var slot1 = $("#Slot1").find(".teamName").text()
       var slot1img = $("#Slot1").find(".teamImg").attr("src")
-      // var slot2 = $("#Slot2")
-      // var slot3 = $("#Slot3")
-      // var slot4 = $("#Slot4")
-      // var slot5 = $("#Slot5")
-      // var slot6 = $("#Slot6")
+
+      var slot2 = $("#Slot2").find(".teamName").text()
+      var slot2img = $("#Slot2").find(".teamImg").attr("src")
+
+      var slot3 = $("#Slot3").find(".teamName").text()
+      var slot3img = $("#Slot3").find(".teamImg").attr("src")
+
+      var slot4 = $("#Slot4").find(".teamName").text()
+      var slot4img = $("#Slot4").find(".teamImg").attr("src")
+
+      var slot5 = $("#Slot5").find(".teamName").text()
+      var slot5img = $("#Slot5").find(".teamImg").attr("src")
+
+      var slot6 = $("#Slot6").find(".teamName").text()
+      var slot6img = $("#Slot6").find(".teamImg").attr("src")
+
+
       localStorage.setItem("slot1", slot1)
       localStorage.setItem("slot1img", slot1img)
+
+      localStorage.setItem("slot2", slot2)
+      localStorage.setItem("slot2img", slot2img)
+
+      localStorage.setItem("slot3", slot3)
+      localStorage.setItem("slot3img", slot3img)
+
+      localStorage.setItem("slot4", slot4)
+      localStorage.setItem("slot4img", slot4img)
+
+      localStorage.setItem("slot5", slot5)
+      localStorage.setItem("slot5img", slot5img)
+
+      localStorage.setItem("slot6", slot6)
+      localStorage.setItem("slot6img", slot6img)
     }
     $(document).on("click", "#displayTeam", displayTeamF);
 
