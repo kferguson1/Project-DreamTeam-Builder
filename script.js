@@ -62,6 +62,7 @@
       });
 
     });
+    //function that adds selected pokemon to team slots
     function addTeamMember() {
       var teamDiv = $("<div class='innerSlot'>");
        var teamName = $(this).attr("data-name");
@@ -71,7 +72,7 @@
       var slot
       teamDiv.append(teamNameEl)
       teamDiv.append(teamImgEl)
-      console.log($("#Slot1"))
+      //makes it so pokemon are added to the slots in order and alerts user is the slots are already full
       if ($("#Slot1").text() === ""){
       slot = $("#Slot1");
       } else if ($("#Slot2").text() === ""){
@@ -90,14 +91,26 @@
       
       slot.append(teamDiv)
     };
+    //function that clears the team slots upon button press
     $("#clearButton").on("click", function(event) {
       event.preventDefault();
-      $( "#Slot1" ).empty();
-      $( "#Slot2" ).empty();
-      $( "#Slot3" ).empty();
-      $( "#Slot4" ).empty();
-      $( "#Slot5" ).empty();
-      $( "#Slot6" ).empty();
+      $( ".teamSlots" ).empty();
     });
+    //listener for the dynamically created button that is added with search to run the addTeamMember function
     $(document).on("click", ".add-team", addTeamMember);
+
+    $(document).on("click", "#saveButton", saveTeam);
+    function saveTeam(event){
+      console.log("something")
+      event.preventDefault()
+      var slot1 = $("#Slot1").find(".teamName").text()
+      var slot1img = $("#Slot1").find(".teamImg").attr("src")
+      // var slot2 = $("#Slot2")
+      // var slot3 = $("#Slot3")
+      // var slot4 = $("#Slot4")
+      // var slot5 = $("#Slot5")
+      // var slot6 = $("#Slot6")
+      localStorage.setItem("slot1", slot1)
+      localStorage.setItem("slot1img", slot1img)
+    }
    
