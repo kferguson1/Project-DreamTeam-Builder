@@ -98,4 +98,19 @@
     });
     //listener for the dynamically created button that is added with search to run the addTeamMember function
     $(document).on("click", ".add-team", addTeamMember);
+
+    $(document).on("click", "#saveButton", saveTeam);
+    function saveTeam(event){
+      console.log("something")
+      event.preventDefault()
+      var slot1 = $("#Slot1").find(".teamName").text()
+      var slot1img = $("#Slot1").find(".teamImg").attr("src")
+      // var slot2 = $("#Slot2")
+      // var slot3 = $("#Slot3")
+      // var slot4 = $("#Slot4")
+      // var slot5 = $("#Slot5")
+      // var slot6 = $("#Slot6")
+      localStorage.setItem("slot1", slot1)
+      localStorage.setItem("slot1img", slot1img)
+    }
    
