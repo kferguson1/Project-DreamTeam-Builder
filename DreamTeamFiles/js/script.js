@@ -2,6 +2,9 @@
 
 
 
+
+
+
 // the search query that will get plugged in for the response
       $("#searchButton").on("click", function(event) {
         event.preventDefault();
@@ -30,7 +33,7 @@
         var typeDiv = $("<div class='pokeType'>");
         var addButton = $("<button>");
         addButton.addClass("add-team");
-        addButton.text("Add to Team");
+        addButton.text("Catch It!");
         addButton.attr("data-name", cap).attr("data-img", image);
         pokeImg.attr("src", image);
         var pokeName = $("<h2>").text("Name: " + cap + " #" + number);
@@ -53,11 +56,13 @@
 
         }
         //apending all the info into 1 div in order then adding that div to the html
+       
         pokeDiv.append(pokeName);
         pokeDiv.append(pokeImg);
+        pokeDiv.append(addButton);
         pokeDiv.append(typeDiv);
         pokeDiv.append(statDiv);
-        pokeDiv.append(addButton);
+       
         $("#pokemonInfo").append(pokeDiv);
       });
 
@@ -141,3 +146,9 @@
       localStorage.setItem("slot6img", slot6img)
     }
    
+
+
+  //parallax script
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });

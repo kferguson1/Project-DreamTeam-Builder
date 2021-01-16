@@ -1,0 +1,77 @@
+body {
+  background-color: #992d2d;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 60px;
+  font-variant: small-caps;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.searchbar {
+  padding: 10px;
+  text-align: left;
+  color: #ffffff;
+}
+
+button {
+  
+  background-color: #fff56a;
+  border: 5px solid #3647ca;
+  color: #000000;
+  
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  padding-left: 10px;
+  text-align: center;
+  
+}
+
+.row > div {
+  padding: 10px;
+  text-align: center;
+  background: #fff56a;
+  border: 5px solid #3647ca;
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+.col {
+  color: #000000;
+}
+
+.teamImg {
+  width: 100%;
+  height: auto;
+}
+
+.pokeImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff56a;
+  border: 5px solid #3647ca;
+}
+
+.searchDiv {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 20px;
+  
+}
+
+.pokeType {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 25px;
+  }
+
