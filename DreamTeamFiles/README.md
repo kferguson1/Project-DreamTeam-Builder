@@ -1,7 +1,17 @@
-# Project-DreamTeam-Builder
+#Project-DreamTeam-Builder
 
-“Pokemon players- you’ve been in this situation before. You’re stuck in a tough gym, or a rough patch of road and you don’t know what to do. Your team just isn’t strong enough. Now you’ll have to spend precious time grinding to progress! However, you feel that with the right team, you could’ve breezed through that challenge. The best trainers know you need the right party for the job. Our goal is to help you find your dream team, this is our tool to accomplish just that.
+At the start of Pokémon’s life, there were 151 Pokémon. With each new game came new Pokémon to catch, trade, and battle. Now, almost 25 years later, there are 898. There’s no way that a player could know them all. Pokémon Dream Team allows you to search for Pokémon from all generations, to build your perfect party. Filter by type, game, and stats. Save and edit them as needed!
 
-Pokemon Dream Team allows you to search for pokemon with a variety of categories. Filter by Type, Generation, Stats, or Moves. After committing to a team, save it for later! Edit as you see fit."
+DreamTeam is built with html, css, and javascript. The Materialize CSS framework and JQuery are also utilized within the project. We use PokeAPI to gather all of our pokemon information. This project would not be possible without that program. Lorem Picsum was used to randomize the parallax image in the site, giving the user a fresh backdrop each launch of the application.
 
-All of our poke info is taken from PokeAPI.
+DreamTeam retains its baseline funcitonality, the ability to search and save pokemon to your team remains. You can clear out your selections and start again as well.
+
+-DreamTeam is built with-
+
+PokeAPI- (https://pokeapi.co/)
+MaterializeCSS- (https://materializecss.com/)
+Lorem Picsum- (https://picsum.photos/)
+
+Pokemon and all related characters/logos are properties of Nintendo. We make no claim of ownership and have no intention to monetize this application.
+
+DreamTeam was developed by a trio of programmers. Thank you for looking at our app! :D
