@@ -99,14 +99,13 @@
     //function that clears the team slots upon button press
     $("#clearButton").on("click", function(event) {
       event.preventDefault();
-      $( ".teamSlots" ).empty();
+      $( ".innerSlot" ).empty();
     });
     //listener for the dynamically created button that is added with search to run the addTeamMember function
     $(document).on("click", ".add-team", addTeamMember);
 
     $(document).on("click", "#saveButton", saveTeam);
     function saveTeam(event){
-      console.log("something")
       event.preventDefault()
       var slot1 = $("#Slot1").find(".teamName").text()
       var slot1img = $("#Slot1").find(".teamImg").attr("src")
@@ -145,10 +144,29 @@
       localStorage.setItem("slot6", slot6)
       localStorage.setItem("slot6img", slot6img)
     }
-   
+    $(document).on("click", "#displayTeam", displayTeamF);
 
+    function displayTeamF() {
+      console.log(localStorage.getItem("slot1"))
+      // $("#Slot1").text(localStorage.getItem("slot1"))
+      // $("#Slot1").text(localStorage.getItem("slot1"))
+      $("#Slot1").find(".teamName").append(localStorage.setItem("slot1", slot1))
+
+
+
+
+
+
+      // var slotsAr = [localStorage.getItem("slot1"), localStorage.getItem("slot2"), localStorage.getItem("slot3"), localStorage.getItem("slot4"), localStorage.getItem("slot5"), localStorage.getItem("slot6")]
+      // var slotsImg = [localStorage.getItem("slot1img"), localStorage.getItem("slot2img"), localStorage.getItem("slot3img"), localStorage.getItem("slot4img"), localStorage.getItem("slot5img"), localStorage.getItem("slot6img")]
+      // var i;
+     
+    };
+   
+ 
 
   //parallax script
   $(document).ready(function(){
     $('.parallax').parallax();
   });
+ 
