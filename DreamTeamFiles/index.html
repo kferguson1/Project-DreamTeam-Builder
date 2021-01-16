@@ -4,28 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Mobile Optimization-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <!--Import Google Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <title>Pokemon Dream Team</title>
+    <title>Pokemon DreamTeam</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <section class="topnav">
       <div>
-        <h1>Pokemon Dream Team</h1>
+        <h1 >Pokemon Dream Team</h1>
 
     
       </div>
@@ -36,38 +36,54 @@
         <button id="searchButton">Search!</button>
         <button id="saveButton">Save this team!</button>
         <button id="clearButton">Clear this team!</button>
-        <button id="displayTeam">Show saved team!</button>
 
-      </div>
+      
     </section>
 
+ 
+
+    <div class= container > 
       <div class="row">
         <div class="col s2">Pokemon Slot 1
-            <div class="teamSlots" id="Slot1"></div>
+            <div id="Slot1"></div>
         </div>
         <div class="col s2">Pokemon Slot 2
-            <div class="teamSlots" id="Slot2"></div>
+            <div id="Slot2"></div>
         </div>
         <div class="col s2">Pokemon Slot 3
-            <div class="teamSlots" id="Slot3"></div>
+            <div id="Slot3"></div>
         </div>
         <div class="col s2">Pokemon Slot 4
-            <div class="teamSlots" id="Slot4"></div>
+            <div id="Slot4"></div>
         </div>
         <div class="col s2">Pokemon Slot 5
-            <div class="teamSlots" id="Slot5"></div>
+            <div id="Slot5"></div>
         </div>
         <div class="col s2">Pokemon Slot 6
-            <div class="teamSlots" id="Slot6"></div>
+          
+            <div id="Slot6"></div>
         </div>
       </div>
+
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="https://picsum.photos/1000/1100"></div>
+    </div>
+    
     </section>
 
+
+
+
+    
+
     <!-- tihs is where the java dumps the pokemon info -->
-    <div id="pokemonInfo"></div>
+    <div class= container id="pokemonInfo"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
     <!--JavaScript at end of body for optimized loading-->
-    <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
