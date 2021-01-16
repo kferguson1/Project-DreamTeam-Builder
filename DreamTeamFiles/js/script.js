@@ -2,6 +2,9 @@
 
 
 
+
+
+
 // the search query that will get plugged in for the response
       $("#searchButton").on("click", function(event) {
         event.preventDefault();
@@ -30,7 +33,7 @@
         var typeDiv = $("<div class='pokeType'>");
         var addButton = $("<button>");
         addButton.addClass("add-team");
-        addButton.text("Add to Team");
+        addButton.text("Catch It!");
         addButton.attr("data-name", cap).attr("data-img", image);
         pokeImg.attr("src", image);
         var pokeName = $("<h2>").text("Name: " + cap + " #" + number);
@@ -53,11 +56,13 @@
 
         }
         //apending all the info into 1 div in order then adding that div to the html
+       
         pokeDiv.append(pokeName);
         pokeDiv.append(pokeImg);
+        pokeDiv.append(addButton);
         pokeDiv.append(typeDiv);
         pokeDiv.append(statDiv);
-        pokeDiv.append(addButton);
+       
         $("#pokemonInfo").append(pokeDiv);
       });
 
@@ -94,14 +99,13 @@
     //function that clears the team slots upon button press
     $("#clearButton").on("click", function(event) {
       event.preventDefault();
-      $( ".teamSlots" ).empty();
+      $( ".innerSlot" ).empty();
     });
     //listener for the dynamically created button that is added with search to run the addTeamMember function
     $(document).on("click", ".add-team", addTeamMember);
 
     $(document).on("click", "#saveButton", saveTeam);
     function saveTeam(event){
-      console.log("something")
       event.preventDefault()
       var slot1 = $("#Slot1").find(".teamName").text()
       var slot1img = $("#Slot1").find(".teamImg").attr("src")
@@ -143,17 +147,26 @@
     $(document).on("click", "#displayTeam", displayTeamF);
 
     function displayTeamF() {
-      $( ".teamSlots" ).empty();
       console.log(localStorage.getItem("slot1"))
-      $("#Slot1").text(localStorage.getItem("slot1"))
-      var slots = [localStorage.getItem("slot1"), localStorage.getItem("slot2"), localStorage.getItem("slot3"), localStorage.getItem("slot4"), localStorage.getItem("slot5"), localStorage.getItem("slot6")]
-      for(i=0; i<slots.length; i++){
-        console.log(slots[i])
-      }
+      // $("#Slot1").text(localStorage.getItem("slot1"))
+      // $("#Slot1").text(localStorage.getItem("slot1"))
+      $("#Slot1").find(".teamName").append(localStorage.setItem("slot1", slot1))
+
+
+
+
+
+
+      // var slotsAr = [localStorage.getItem("slot1"), localStorage.getItem("slot2"), localStorage.getItem("slot3"), localStorage.getItem("slot4"), localStorage.getItem("slot5"), localStorage.getItem("slot6")]
+      // var slotsImg = [localStorage.getItem("slot1img"), localStorage.getItem("slot2img"), localStorage.getItem("slot3img"), localStorage.getItem("slot4img"), localStorage.getItem("slot5img"), localStorage.getItem("slot6img")]
+      // var i;
      
-     var slot
-     teamDiv.append(teamNameEl)
-     teamDiv.append(teamImgEl)
-     
-     slot.append(teamDiv)
     };
+   
+ 
+
+  //parallax script
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+ 

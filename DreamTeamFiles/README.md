@@ -5,5 +5,3 @@
 Pokemon Dream Team allows you to search for pokemon with a variety of categories. Filter by Type, Generation, Stats, or Moves. After committing to a team, save it for later! Edit as you see fit."
 
 All of our poke info is taken from PokeAPI.
-
-Testing 1234
