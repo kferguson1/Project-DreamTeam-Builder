@@ -4,7 +4,7 @@ At the start of Pokémon’s life, there were 151 Pokémon. With each new game c
 
 DreamTeam is built with html, css, and javascript. The Materialize CSS framework and JQuery are also utilized within the project. We use PokeAPI to gather all of our pokemon information. This project would not be possible without that program. Lorem Picsum was used to randomize the parallax image in the site, giving the user a fresh backdrop each launch of the application.
 
-DreamTeam retains its baseline funcitonality, the ability to search and save pokemon to your team remains. You can clear out your selections and start again as well.
+DreamTeam allows you to search and save pokemon teams, clear them and display your saved team again from local storage.
 
 -DreamTeam is built with-
 
