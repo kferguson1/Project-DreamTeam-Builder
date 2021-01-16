@@ -147,16 +147,13 @@
       console.log(localStorage.getItem("slot1"))
       $("#Slot1").text(localStorage.getItem("slot1"))
       var slots = [localStorage.getItem("slot1"), localStorage.getItem("slot2"), localStorage.getItem("slot3"), localStorage.getItem("slot4"), localStorage.getItem("slot5"), localStorage.getItem("slot6")]
-      
-      var teamDiv = $("<div class='innerSlot'>");
-      var teamName = $(this).attr("data-name");
-     var teamImg = $(this).attr("data-img");
-     var teamNameEl = $("<p class='teamName'>").text(teamName);
-     var teamImgEl = $("<img class='teamImg'>").attr("src", teamImg);
+      for(i=0; i<slots.length; i++){
+        console.log(slots[i])
+      }
+     
      var slot
      teamDiv.append(teamNameEl)
      teamDiv.append(teamImgEl)
      
      slot.append(teamDiv)
     };
-   
