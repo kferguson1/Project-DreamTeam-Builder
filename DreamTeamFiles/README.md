@@ -8,8 +8,8 @@ DreamTeam retains its baseline funcitonality, the ability to search and save pok
 
 -DreamTeam is built with-
 
-PokeAPI- (https://pokeapi.co/)
-MaterializeCSS- (https://materializecss.com/)
+PokeAPI- (https://pokeapi.co/) <br>
+MaterializeCSS- (https://materializecss.com/) <br>
 Lorem Picsum- (https://picsum.photos/)
 
 Pokemon and all related characters/logos are properties of Nintendo. We make no claim of ownership and have no intention to monetize this application.
