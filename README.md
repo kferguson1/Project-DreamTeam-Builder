@@ -15,3 +15,8 @@ Lorem Picsum- (https://picsum.photos/)
 Pokemon and all related characters/logos are properties of Nintendo. We make no claim of ownership and have no intention to monetize this application.
 
 DreamTeam was developed by a trio of programmers. Thank you for looking at our app! :D
+
+Screenshots!
+![Pokemon1](https://user-images.githubusercontent.com/66282427/105797892-eea09d00-5f5e-11eb-80a5-521ccd761682.png)
+![Pokemon2](https://user-images.githubusercontent.com/66282427/105797895-f06a6080-5f5e-11eb-8fb4-bac415b00ba1.png)
+![Pokemon3](https://user-images.githubusercontent.com/66282427/105797902-f19b8d80-5f5e-11eb-9031-5fcc63c9ee37.png)
